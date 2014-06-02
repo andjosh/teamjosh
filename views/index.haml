@@ -2,29 +2,59 @@
 %html.no-js{:lang => "en"}
   / Brought to you by Team Josh, teamjosh.co
   %head
-    %title Team Josh
-    %meta{:content => "Joshua Beckman & Josh Martin", :name => "description"}
+    %title Team Josh | Josh Beckman &amp; Josh Martin
+    %meta{:content => "Joshua Beckman & Josh Martin: Daringly-dynamic developer & designer doing damn-delicious deeds daily. Chicago, Illinois", :name => "description"}
     %meta{:charset => "UTF-8"}
     %meta{:content => "width=device-width, initial-scale=1", :name => "viewport"}
     %link{:href => "css/styles.css", :media => "screen", :rel => "stylesheet"}
-    %link{:href => "http://fonts.googleapis.com/css?family=Open+Sans", :rel => "stylesheet", :type => "text/css"}
+    %link{:rel => "shortcut icon", :href => "/img/favicon.ico"}
+    %link{:href => "http://fonts.googleapis.com/css?family=Open+Sans:600,700", :rel => "stylesheet", :type => "text/css"}
   %body
-    /
-      Spacey Header
-      \////////////////////////////////////////////////////////////////
-    .spacey-header
-      .header-content.wrapper.cf.text-center
-        %div
-          %h1 Daringly dynamic developer & designer duo
-          %span.spacey-text
-            %a.spacey-link{:href => "http://jbckmn.net", :target => "_blank", :title => "Joshua Beckman"} @jbckmn
-            &&
-            %a.spacey-link{:href => "http://jawsmartin.com", :target => "_blank", :title => "Josh Martin"} @jawsmartin
-    /
-      Footer
-      \////////////////////////////////////////////////////////////////
-    .spacey-footer
-      .spacey-footer-content.wrapper.cf
+    .message
+      .message-content.text-center.wrapper.cf
+        .message-intro.text-left.block
+          %span.logo.block Team Josh
+          %h1.message-title.block Daringly dynamic developer & designer doing damn-delicious deeds daily.
+          %p.message-copy.block Team Josh is a tandem-bicycle-riding supergroup slash design studio combining the talents of two people that love what they do way too much.
+    .projects
+      .projects-content.wrapper.cf
+        %p.projects-title Current Projects
+        %p
+        .project-links.inline-block
+          %a.link.pink{href: "http://www.bbbench.com", target: "_blank"} >> Bbbench: Artist bookmarking for Dribbble players
+          %br/
+          %a.link.brown{href: "http://www.samspacey.info", target: "_blank"} >> Sam Spacey: Professional Squarespace logo designer
+          %br/
+          %a.link.red{href: "http://www.pngorjpeg.com", target: "_blank"} >> PNG or JPEG: A guide for dummies.
+    .team
+      .team-content.text-center.wrapper.cf
+        .profile.float-left.inline-block
+          .avatar-container
+            %img.avatar.max-width{height: "200px", src: "/img/beckman.jpg", width: "200px"}/
+          .profile-description
+            %h2 Joshua Beckman
+            %span.role Developer/Doctor
+            %p.profile-copy Joshua Beckman is passionate about cereal and dancing when no one is watching. He enjoys his motorcycle, babysitting cats, and giving judgemental looks to co-workers.
+            .social-links
+              %a.button.portfolio-link.link{href: "http://www.andjosh.com", target: "_blank"} Portfolio
+              %a.button.email-link.link{href: "mailto:jsh@bckmn.com", target: "_blank"} Email
+              %a.twitter-link{href: "http://www.twitter.com/jbckmn", target: "_blank"}
+                %img.twitter-icon{height: "16px", src: "/img/twitter.png", width: "20px"}/
+        .profile.inline-block.float-right
+          .avatar-container
+            %img.avatar.max-width{height: "200px", src: "/img/martin.jpg", width: "200px"}/
+          .profile-description
+            %h2 Josh Martin
+            %span.role Designer/Shark
+            %p.profile-copy Josh Martin quietly sits in the corners of offices drinking sugary drinks from a bottle like an adult baby. He once took his hat off and went unrecognized for two months.
+            .social-links
+              %a.button.portfolio-link.link{href: "http://www.jawsmartin.com", target: "_blank"} Portfolio
+              %a.button.email-link.link{href: "jawsmartin@gmail.com", target: "_blank"} Email
+              %a.twitter-link{href: "http://www.twitter.com/jawsmartin", target: "_blank"}
+                %img.twitter-icon{height: "16px", src: "/img/twitter.png", width: "20px"}/
+    %footer.footer
+      .footer-content.text-center.wrapper.cf
+        %span.copyright ©2014. Building in Chi-Town.
     %script
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),

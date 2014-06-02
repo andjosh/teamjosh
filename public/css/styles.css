@@ -1,10 +1,9 @@
 /* Reset (reduce browser inconsistencies)
---------------------------------------------------*/
+-----------------------------------------------*/
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
 */
-
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -48,10 +47,8 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-
 /* Clearfix (control floating elements)
 -----------------------------------------------*/
-
 /**
  * For modern browsers
  * 1. The space content is one way to avoid an Opera bug when the
@@ -66,11 +63,9 @@ table {
     content: " "; /* 1 */
     display: table; /* 2 */
 }
-
 .cf:after {
     clear: both;
 }
-
 /**
  * For IE 6/7 only
  * Include this rule to trigger hasLayout and contain floats.
@@ -79,36 +74,40 @@ table {
     *zoom: 1;
 }
 
-
-/* Page Styles
+/* Structure
 -----------------------------------------------*/
 .wrapper {
-  width: 90%;
-  max-width: 1200px;
+  width: 92%;
+  max-width: 768px;
   margin: 0 auto;
 }
 
 body {
   background-color: white;
-  color: #939598;
-  font-size: .75em;  /* 12px */
-  line-height: 1.5em;
+  color: #1a1a1a;
   font-family: 'Open Sans', sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 22px;
+  text-align: left;
+}
+
+/* Universal 
+-----------------------------------------------*/
+.float-left {
+  float: left;
+}
+
+.float-right {
+  float: right;
 }
 
 .text-center {
   text-align: center;
 }
 
-.text-justify {
-  text-align: justify;
-}
-
-.stretch {
-  width: 100%;
-  display: inline-block;
-  font-size: 0;
-  line-height: 0
+.text-left {
+  text-align: left;
 }
 
 .inline-block {
@@ -119,63 +118,179 @@ body {
   display: block;
 }
 
+.link {
+  text-decoration: none;
+  color: inherit;
+}
+
 .max-width {
+  width: 100%;
   max-width: 100%;
   height: auto;
 }
 
-.spacey-header {
-  margin-top: 75px;
+.pink {
+  color: #f464a6;
+}
+
+.red {
+  color: #f76d6d;
+}
+
+.brown {
+  color: #a0874e;
+}
+
+.white {
+  color: white;
+}
+
+/* Message
+-----------------------------------------------*/
+.logo {
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+  font-size: 15px;
+}
+
+.message {
+  margin-top: 9%;
+}
+
+.message-intro {
   margin-bottom: 50px;
 }
 
-.spacey-logo-container {
-  width: 30%;
+.message-title {
+  font-weight: 600;
+  font-size: 32px;
+  max-width: 600px;
+  line-height: 40px;
+  margin-bottom: 10px;
+}
+
+.message-copy {
+  font-size: 15px;
+  max-width: 600px;
+  line-height: 21px;
+}
+
+/* Projects
+-----------------------------------------------*/
+.projects-content {
+  padding-bottom: 50px;
+  border-bottom: 1px dotted #ececec;
+  margin-bottom: 40px;
+}
+
+.projects-title {
+  font-weight: 600;
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+
+/* Team
+-----------------------------------------------*/
+.profile {
+  width: 47%;
+  background-color: white;
+}
+
+.avatar-container {
+  width: 18%;
   display: inline-block;
-  margin-top: 50px;
-  box-shadow: 0px 0px 2px 1px #ececec;
+  float: left;
+  margin-right: 5%;
+}
+
+h2 {
+  font-weight: 600;
+  font-size: 24px;
+  margin-bottom: 5px;
+}
+
+.role {
+  opacity: .4;
+  font-weight: 600;
+  display: block;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.profile-copy {
+  font-size: 15px;
+  line-height: 20px;
+}
+
+.profile-description {
+  text-align: left;
+  float: left;
+  display: inline-block;
+  width: 75%;
+}
+
+.button {
+  font-size: 13px;
+  border: 1px solid #ececec;
+  padding: 10px 25px 10px 25px;
+  border-radius: 2px;
+  margin-right: 5px;
   background-color: #fcfcfc;
 }
 
-.spacey-text {
-  font-size: 15px;
-  line-height: 45px;
+.button:hover {
+  background-color: white;
 }
 
-.spacey-footer {
-  padding-top: 75px;
-  padding-bottom: 50px;
+.twitter-link {
+  border: 1px solid #ececec;
+  padding: 8px 15px 10px 15px;
+  border-radius: 2px;
+  background-color: #fcfcfc;
 }
 
-.spacey-link {
-  text-decoration: none;
-  color: #1a1a1a;
-  opacity: .5;
+.twitter-link:hover {
+  background-color: white;
 }
 
-.spacey-link:hover {
-  opacity: 1;
+.twitter-icon {
+  position: relative;
+  top: 4px;
+}
+
+.social-links {
+  margin-top: 25px;
+}
+
+.profile-container {
+  width: 100%;
+}
+
+/* Footer
+-----------------------------------------------*/
+
+.footer {
+  margin: 10% 0px 10% 0px;
+}
+
+.copyright {
+  font-size: 11px;
+  opacity: .7;
 }
 
 /* Media Queries
 -----------------------------------------------*/
-@media screen and (max-width: 911px) {
-  .spacey-logo-container {
-    width: 48%;
+@media screen and (max-width: 760px) {
+  .profile {
+    width: 100%;
+    margin-bottom: 60px;
   }
 }
 
-@media screen and (max-width: 627px) {
-  .spacey-logo-container {
-    width: 100%;
-  }
 
-  .spacey-header {
-    margin-top: 45px;
-  }
-
-  .spacey-text {
-    font-size: 13px;
-    line-height: 15px;
+@media screen and (max-width: 400px) {
+  .button {
+    padding: 10px 15px 10px 15px;
   }
 }
